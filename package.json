@@ -4,8 +4,14 @@
   "description": "Restaurant application using MERN stack",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "start-server": "nodemon server.js"
   },
-  "author": "\"Rifat Sargin\",",
-  "license": "MIT"
+  "author": "Rifat Sargin",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.11.7",
+    "nodemon": "^2.0.6"
+  }
 }
