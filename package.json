@@ -5,13 +5,22 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "start-server": "nodemon server.js"
+    "start-server": "nodemon server.js",
+    "start-client": "yarn --cwd client start",
+    "dev": "concurrently \"yarn start-server\" \"yarn start-client\""
   },
   "author": "Rifat Sargin",
   "license": "MIT",
   "dependencies": {
+    "bcrypt": "^5.0.0",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
+    "express-validator": "^6.8.0",
     "mongoose": "^5.11.7",
     "nodemon": "^2.0.6"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "morgan": "^1.10.0"
   }
 }
